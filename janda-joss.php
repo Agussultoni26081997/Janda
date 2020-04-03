@@ -57,7 +57,7 @@ echo "\e[92m ==================================================\n";
         save("token.txt",$token);
         echo color("green","\n==========(REDEEM VOUCHER)==========");
         echo "\n".color("white","!] Claim Voucher GO FOOD EATLAH");
-        echo "\n".color("blue","!] Please wait");
+        echo "\n".color("blue","!] masih nungu janda ya...");
         for($a=1;$a<=3;$a++){
         echo color("green",".");
         sleep(3);
@@ -71,7 +71,7 @@ echo "\e[92m ==================================================\n";
         echo "\n".color("red","-] Message: ".$message);
 	gocar:
         echo "\n".color("white","!] Claim Voucher GO-FOOD 30K");
-        echo "\n".color("blue","!] Please wait");
+        echo "\n".color("blue","!] tunggu ya janda lagi otw...");
         for($a=1;$a<=3;$a++){
         echo color("purple",".");
         sleep(20);
@@ -85,7 +85,7 @@ echo "\e[92m ==================================================\n";
         echo "\n".color("green","+] Message: ".$message);
         gofood:
         echo "\n".color("white","!] Claim Voucher BURGERKING");
-        echo "\n".color("blue","!] Please wait");
+        echo "\n".color("blue","!] tunggu ya janda lagi otw");
         for($a=1;$a<=3;$a++){
         echo color("purple",".");
         sleep(3);
@@ -94,7 +94,7 @@ echo "\e[92m ==================================================\n";
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","+] Message: ".$message);
         echo "\n".color("white","!] Claim Voucher GO FOOD JANDA LAGI");
-        echo "\n".color("blue","!] Please wait");
+        echo "\n".color("blue","!] Masih nunggu janda...");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(1);
@@ -186,7 +186,7 @@ echo "\e[92m ==================================================\n";
          }else if($pilih1 == "n" || $pilih1 == "N"){
          die();
          }else{
-         echo color("red","-] GAGAL!!!\n");
+         echo color("red","-] KURANG TAMVAN!!!\n");
          }
          }
          }
