@@ -3,11 +3,11 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo "\n";
 echo "\e[94m =================================================\n";
-echo "\e[91m Time:".date('[d-m-Y] [H:i:s]')."\n";
+echo "\e[91m         .Time:".date('[d-m-Y] [H:i:s]')."\n";
 echo "\e[92m °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\n";
-echo "\e[92m     [+][][][][]      MBAH OZIL     [][][][][+] \n";
+echo "\e[92m ############### MBAH OZIL ######################\n";
 echo "\e[94m =================================================\n";
-echo "\e[92m [[ AUTO REGISTRASI & REDEEM VOUCHER ]]    \n";
+echo "\e[92m       [[ AUTO REGISTRASI & REDEEM VOUCHER ]]    \n";
 echo "\e[94m =================================================\n";
 echo "\e[92m °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\n";
 echo "\e[92m ==================================================\n";
@@ -62,7 +62,7 @@ echo "\e[92m ==================================================\n";
         echo color("green",".");
         sleep(3);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PAKEGOFOOD010420A"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EATLAH"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","+] Message: ".$message);
@@ -93,14 +93,14 @@ echo "\e[92m ==================================================\n";
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BURGERKING"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","+] Message: ".$message);
-        echo "\n".color("white","!] Claim Voucher GO RIDE");
+        echo "\n".color("white","!] Claim Voucher GO FOOD JANDA LAGI");
         echo "\n".color("blue","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(1);
         }
         sleep(3);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"AYOCOBAGOJEK010420A"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PAKEGOFOOD010420A"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("green","+] Message: ".$messageboba09);
         sleep(3);
@@ -172,7 +172,7 @@ echo "\e[92m ==================================================\n";
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\n".color("red","?] SILAHKAN SETT PIN ANDA !: y/n ");
+         echo "\n".color("red","?] SILAHKAN PASANG PIN JANDA MU !: y/n ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "62")){
@@ -197,7 +197,7 @@ echo "\e[92m ==================================================\n";
          goto otp;
          }
          }else{
-         echo color("red","-] Nomor sudah teregistrasi");
+         echo color("red","-] Nomor Sudah TERDAFTAR MBAH CUKK");
          echo"\n==================================\n\n";
          echo color("purple","!] Silahkan registrasi kembali\n");
          }
