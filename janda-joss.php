@@ -5,7 +5,7 @@ echo "\n";
 echo "\e[94m =================================================\n";
 echo "\e[91m         .Time:".date('[d-m-Y] [H:i:s]')."\n";
 echo "\e[92m °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\n";
-echo "\e[92m ############### MBAH OZIL ######################\n";
+echo "\e[92m                     MBAH OZIL \n";
 echo "\e[94m =================================================\n";
 echo "\e[92m       [[ AUTO REGISTRASI & REDEEM VOUCHER ]]    \n";
 echo "\e[94m =================================================\n";
@@ -56,13 +56,13 @@ echo "\e[92m ==================================================\n";
         echo color("red","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
         echo color("green","\n==========(REDEEM VOUCHER)==========");
-        echo "\n".color("white","!] Claim Voucher GO FOOD EATLAH");
+        echo "\n".color("white","!] Claim Voucher GO RIDE");
         echo "\n".color("blue","!] masih nungu janda ya...");
         for($a=1;$a<=3;$a++){
         echo color("green",".");
         sleep(3);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EATLAH"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGORIDEPAY04"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","+] Message: ".$message);
@@ -84,13 +84,13 @@ echo "\e[92m ==================================================\n";
         }else{
         echo "\n".color("green","+] Message: ".$message);
         gofood:
-        echo "\n".color("white","!] Claim Voucher BURGERKING");
+        echo "\n".color("white","!] Claim Voucher EATLAH");
         echo "\n".color("blue","!] tunggu ya janda lagi otw");
         for($a=1;$a<=3;$a++){
         echo color("purple",".");
         sleep(3);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BURGERKING"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EATLAH"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","+] Message: ".$message);
         echo "\n".color("white","!] Claim Voucher GO FOOD JANDA LAGI");
